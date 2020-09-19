@@ -1,4 +1,4 @@
-package binance
+package futures
 
 import (
 	"bytes"
@@ -6,10 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
-	"testing"
-	"time"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
@@ -160,9 +157,4 @@ func (s *baseTestSuite) assertTradeV3Equal(e, a *TradeV3) {
 	r.Equal(e.IsBuyer, a.IsBuyer, "IsBuyer")
 	r.Equal(e.IsMaker, a.IsMaker, "IsMaker")
 	r.Equal(e.IsBestMatch, a.IsBestMatch, "IsBestMatch")
-}
-
-func TestFormatTimestamp(t *testing.T) {
-	tm, _ := time.Parse("2006-01-02 15:04:05", "2018-06-01 01:01:01")
-	assert.Equal(t, int64(1527814861000), FormatTimestamp(tm))
 }

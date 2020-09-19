@@ -295,7 +295,6 @@ type Order struct {
 	AvgPrice         string           `json:"avgPrice"`
 	OrigType         string           `json:"origType"`
 	PositionSide     PositionSideType `json:"positionSide"`
-	ClosePosition    bool             `json:"closePosition"`
 }
 
 // ListOrdersService all account orders; active, canceled, or filled
