@@ -3,8 +3,8 @@
 A Golang SDK for [binance](https://www.binance.com) API.
 
 [![Build Status](https://travis-ci.org/adshao/go-binance.svg?branch=master)](https://travis-ci.org/adshao/go-binance)
-[![GoDoc](https://godoc.org/github.com/adshao/go-binance?status.svg)](https://godoc.org/github.com/adshao/go-binance)
-[![Go Report Card](https://goreportcard.com/badge/github.com/adshao/go-binance)](https://goreportcard.com/report/github.com/adshao/go-binance)
+[![GoDoc](https://godoc.org/github.com/eiuapp/go-binance?status.svg)](https://godoc.org/github.com/eiuapp/go-binance)
+[![Go Report Card](https://goreportcard.com/badge/github.com/eiuapp/go-binance)](https://goreportcard.com/report/github.com/eiuapp/go-binance)
 [![codecov](https://codecov.io/gh/adshao/go-binance/branch/master/graph/badge.svg)](https://codecov.io/gh/adshao/go-binance)
 
 All the REST APIs listed in [binance API document](https://github.com/binance-exchange/binance-official-api-docs) are implemented, as well as the websocket APIs.
@@ -15,32 +15,32 @@ Make sure you have read binance API document before continuing.
 
 ### API List
 
-Name | Description | Status
------------- | ------------ | ------------
-[rest-api.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md) | Details on the Rest API (/api) | <input type="checkbox" checked> Implemented
-[web-socket-streams.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/web-socket-streams.md) | Details on available streams and payloads | <input type="checkbox" checked>  Implemented
-[user-data-stream.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/user-data-stream.md) | Details on the dedicated account stream | <input type="checkbox" checked>  Implemented
-[wapi-api.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/wapi-api.md) | Details on the Withdrawal API (/wapi) | <input type="checkbox" checked>  Partially Implemented
-[margin-api.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/margin-api.md) | Details on the Margin API (/sapi) | <input type="checkbox" checked>  Implemented
-[futures-api.md](https://binance-docs.github.io/apidocs/futures/en/#general-info) | Details on the Futures API (/fapi) | <input type="checkbox" checked>  Partially Implemented
+| Name                                                                                                                     | Description                               | Status                                                |
+| ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | ----------------------------------------------------- |
+| [rest-api.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md)                     | Details on the Rest API (/api)            | <input type="checkbox" checked> Implemented           |
+| [web-socket-streams.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/web-socket-streams.md) | Details on available streams and payloads | <input type="checkbox" checked> Implemented           |
+| [user-data-stream.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/user-data-stream.md)     | Details on the dedicated account stream   | <input type="checkbox" checked> Implemented           |
+| [wapi-api.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/wapi-api.md)                     | Details on the Withdrawal API (/wapi)     | <input type="checkbox" checked> Partially Implemented |
+| [margin-api.md](https://github.com/binance-exchange/binance-official-api-docs/blob/master/margin-api.md)                 | Details on the Margin API (/sapi)         | <input type="checkbox" checked> Implemented           |
+| [futures-api.md](https://binance-docs.github.io/apidocs/futures/en/#general-info)                                        | Details on the Futures API (/fapi)        | <input type="checkbox" checked> Partially Implemented |
 
 ### Installation
 
 ```shell
-go get github.com/adshao/go-binance
+go get github.com/eiuapp/go-binance
 ```
 
 ### Importing
 
 ```golang
 import (
-    "github.com/adshao/go-binance"
+    "github.com/eiuapp/go-binance"
 )
 ```
 
 ### Documentation
 
-[![GoDoc](https://godoc.org/github.com/adshao/go-binance?status.svg)](https://godoc.org/github.com/adshao/go-binance)
+[![GoDoc](https://godoc.org/github.com/eiuapp/go-binance?status.svg)](https://godoc.org/github.com/eiuapp/go-binance)
 
 ### REST API
 
@@ -61,7 +61,7 @@ A service instance stands for a REST API endpoint and is initialized by client.N
 
 Simply call API in chain style. Call Do() in the end to send HTTP request.
 
-Following are some simple examples, please refer to [godoc](https://godoc.org/github.com/adshao/go-binance) for full references.
+Following are some simple examples, please refer to [godoc](https://godoc.org/github.com/eiuapp/go-binance) for full references.
 
 #### Create Order
 
