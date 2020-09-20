@@ -78,11 +78,10 @@ func (s *ListTakerLongShortRatioService) Do(ctx context.Context, opts ...Request
 
 // ListTakerLongShortRatio define open interest history info
 type ListTakerLongShortRatio struct {
-	Symbol         string `json:"symbol"`
-	LongShortRatio string `json:"longShortRatio"`
-	LongAccount    string `json:"longAccount"`
-	ShortAccount   string `json:"shortAccount"`
-	Timestamp      int64  `json:"timestamp"`
+	BuySellRatio string `json:"buySellRatio"`
+	BuyVol       string `json:"buyVol"`
+	SellVol      string `json:"sellVol"`
+	Timestamp    int64  `json:"timestamp"`
 }
 
 // NewListTakerLongShortRatioService 大户账户数多空比
